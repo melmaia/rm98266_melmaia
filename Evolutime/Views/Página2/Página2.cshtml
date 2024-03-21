@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Lista de Jogos: ";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Jogos Estilizada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .list-group {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .list-group-item {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+            .list-group-item.active {
+                background-color: #007bff;
+                border-color: #007bff;
+                color: #fff;
+            }
+
+            .list-group-item:hover {
+                background-color: #f8f9fa;
+            }
+
+            .list-group-item h5 {
+                color: #333;
+                margin-bottom: 5px;
+            }
+
+            .list-group-item small {
+                color: #666;
+            }
+
+            .list-group-item p {
+                color: #555;
+                margin-top: 5px;
+            }
+    </style>
+</head>
+<body>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">The Witcher 3: Wild Hunt</h5>
+                <small>Há 3 dias</small>
+            </div>
+            <p class="mb-1">The Witcher 3: Wild Hunt é um aclamado jogo de RPG desenvolvido pela CD Projekt Red.</p>
+            <small>Aventura, RPG</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Red Dead Redemption 2</h5>
+                <small class="text-body-secondary">Há 3 dias</small>
+            </div>
+            <p class="mb-1">Red Dead Redemption 2 é um jogo de ação-aventura ambientado no Velho Oeste, desenvolvido pela Rockstar Games.</p>
+            <small class="text-body-secondary">Ação, Aventura</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">The Legend of Zelda: Breath of the Wild</h5>
+                <small class="text-body-secondary">Há 3 dias</small>
+            </div>
+            <p class="mb-1">The Legend of Zelda: Breath of the Wild é um jogo de aventura da série Zelda desenvolvido pela Nintendo.</p>
+            <small class="text-body-secondary">Aventura, RPG</small>
+        </a>
+    </div>
+</body>
+</html>
